@@ -17,13 +17,11 @@
         <script>
             function validateAnswer(){
                 var input = document.getElementById("answer").value;
-                var testing = "<h1>${input}</h1>";
-                document.write(testing);
                 if (input == "izzy") {
-                    document.getElementById("varying_result").innerHTML = "<h1>Correct!</h1>";
+                    document.write("<h1>Correct!</br></h1>");
                 } 
                 else {
-                    document.getElementById("varying_result").innerHTML = "<h1>Incorrect</h1>";
+                    document.write("<h1>Incorrect</br><a href="lucyotoole.github.io/izzy">Try Again!</a></h1>");
                 }
             }
         </script>
