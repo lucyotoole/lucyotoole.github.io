@@ -13,16 +13,20 @@
         <label for="question">What is your name?</label>
         <input type="text" id="answer" name="question">
         <button type="button" onclick = "validateAnswer()">Enter</button>
+        <p id="the_input"></p>
         <p id="varying_result"></p>
         <script>
             function validateAnswer(){
                 var input = document.getElementById("answer").value;
-                if (input == "izzy") {
-                    document.write("<h1>Correct!</br></h1>");
+                document.getElementById("the_input").innerHTML = input;
+                var result; 
+                if (input.localeCompare("izzy") {
+                    result = "<h1>Correct!</br><a href="lucyotoole.github.io/yfey47j43wid7jYe7327jyr9KY978cjw7wd">Your Present!</a></h1>";
                 } 
                 else {
-                    document.write("<h1>Incorrect</br><a href="lucyotoole.github.io/izzy">Try Again!</a></h1>");
+                    result = "<h1>Incorrect</br><a href="lucyotoole.github.io/izzy">Try Again!</a></h1>";
                 }
+                document.getElementById("varying_result").innerHTML = result;
             }
         </script>
     </body>
