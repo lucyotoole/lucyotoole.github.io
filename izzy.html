@@ -13,16 +13,16 @@
         <label for="question">What is your name?</label>
         <input type="text" id="answer" name="question">
         <button type="button" onclick = "validateAnswer()">Enter</button>
-        <p id="demo"></p>
+        <p id="varying_result"></p>
         <script>
             function validateAnswer(){
                 var input = document.getElementById("answer").value;
-                document.getElementById("demo").innerHTML = "<h1>test123</h1>";
+                document.write("<h1>${input}</h1>");
                 if (input == "izzy") {
-                    document.getElementById("demo").innerHTML = "Correct!";
+                    document.getElementById("varying_result").innerHTML = "<h1>Correct!</h1>";
                 } 
                 else {
-                    document.getElementById("demo").innerHTML = "Incorrect";
+                    document.getElementById("varying_result").innerHTML = "<h1>Incorrect</h1>";
                 }
             }
         </script>
