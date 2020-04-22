@@ -2,18 +2,30 @@
 <html>
     <head>
         <title>
-            Izzy's Seventh Birthday Present
+            Izzy's Seventh Birthday Present!
         </title>
     </head>
     <body>
-        <form action='someone_is_trying_to_get_izzys_present.php'>
-            Are you sure you're Izzy??
-            </br>
-            Answer this question that only she would know:
-            </br>
-            <label for="question">What is your name?</label>
-            <input type="text" id="answer" name="answer">
-            <input type="submit">
-        </form>
+        Are you sure you're Izzy??
+        </br>
+        Answer this question that only she would know:
+        </br>
+        <label for="question">What is your name?</label>
+        <input type="text" id="answer" name="question">
+        <button type="button" onclick = "validateAnswer()">Submit</button>
+        <p id="demo">
+            
+        </p>
+        <script>
+            function validateAnswer(){
+                var input = document.getElementById("answer").value;
+                var result;
+                if value == "izzy" {
+                    document.getElementById("demo").innerHTML = "Correct!";
+                } else {
+                    document.getElementById("demo").innerHTML = "Incorrect";
+                }
+            }
+        </script>
     </body>
 </html>
