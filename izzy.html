@@ -17,7 +17,8 @@
         <script>
             function validateAnswer(){
                 var input = document.getElementById("answer").value;
-                document.write("<h1>${input}</h1>");
+                var testing = "<h1>${input}</h1>";
+                document.write(testing);
                 if (input == "izzy") {
                     document.getElementById("varying_result").innerHTML = "<h1>Correct!</h1>";
                 } 
