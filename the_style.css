@@ -4,3 +4,6 @@ html {
 blockquote {
     text-align: center;
 }
+body {
+  background-color: #f0f0f0; /* Replace with any hex, rgb, or color name */
+}
